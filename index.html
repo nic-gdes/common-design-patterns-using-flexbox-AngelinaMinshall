@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Design Patterns</title>
+    <style>
+        .div {
+            background-color: pink;
+            height: 150px;
+            width: 150px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 960px;
+        }
+        .divy {
+            background-color: orange;
+            height: 500px;
+            width: 115px;
+        }
+        .contained {
+            display: flex;
+            align-items: stretch;
+            gap: 15px;
+        }
+
+        .dived {
+            background-color: yellowgreen;
+            display: flex;
+            
+        }
+        .tained {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3x3 Grid -->
+    <div class="container">
+
+   <div class="div">1</div>
+   <div class="div">2</div>
+   <div class="div">3</div>
+   <div class="div">4</div>
+   <div class="div">5</div>
+   <div class="div">6</div> 
+   <div class="div">7</div>
+   <div class="div">8</div>
+   <div class="div">9</div> 
+    </div>
+
+      <!-- Stretch   -->
+     <div class="contained">
+   <div class="divy">a</div>
+   <div class="divy">b</div>
+   <div class="divy">c</div>
+   <div class="divy">d</div>
+    </div>
+
+    <!-- Horizontal Bars -->
+        <div class="tained"></div>
+    <div class="dived">1</div>
+    <div class="dived">2</div>
+    <div class="dived">3</div>
+    <div class="dived">4</div>
+    <div class="dived">5</div>
+        </div>
+
+
+</body>
+</html>
